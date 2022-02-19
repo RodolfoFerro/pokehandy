@@ -10,11 +10,15 @@ this tool every friday at 9 PM (🇲🇽) on
 
 ## To do list:
 
-- [X] Convert deck fortmat from PCTGO to a processable list of information
+- [X] Convert deck format from PCTGO to a processable list of information
 - [X] Search card info through the [Pokémon TCG API](https://pokemontcg.io/)
 - [ ] Display cards (deck) in a grid
-- [ ] Build an object with card info from the API
+- [X] Build an object with card info from the API
 - [ ] Build a virtual deck
-- [ ] Build shuffling algorith (Fisher-Yates or similar)
+- [X] Build shuffling algorith (Fisher-Yates or similar) ▶️ Used Durstenfeld shuffle
 - [ ] Simulate hands + mulligans + prizes
 - [ ] Build useful visualizations
+
+--- 
+
+- [ ] Port to Flask App
