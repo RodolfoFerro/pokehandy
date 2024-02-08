@@ -39,7 +39,12 @@ raw_deck = st.sidebar.text_area(
     "Introduce your deck as exported from Pokémon TCGO:", 
     height=300
 )
-st.sidebar.button("Simulate")
+if st.sidebar.button("Simulate"):
+    pokemon_raw, trainer_raw, energy_raw = parse_deck_from_tcgo(raw_deck)
+    pokemon_info = parse_raw_to_info(pokemon_raw)
+    trainer_info = parse_raw_to_info(trainer_raw)
+    energy_info = parse_raw_to_info(energy_raw)
+    st.markdown(pokemon_info)
 
 
 # ============================================================================
